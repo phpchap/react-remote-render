@@ -1,0 +1,9 @@
+#!/bin/sh
+DIR=$(/usr/bin/dirname $0)
+ROOT_DIR=$(/bin/bash -c "cd $DIR/..; /bin/pwd")
+cd $ROOT_DIR
+
+echo "starting server"
+npm run server-install-fragments-dependencies
+npm run server-build-fragments
+npm run server-start-fragments

@@ -1,0 +1,7 @@
+#!/bin/sh
+DIR=$(/usr/bin/dirname $0)
+ROOT_DIR=$(/bin/bash -c "cd $DIR/..; /bin/pwd")
+cd $ROOT_DIR
+
+echo "starting client"
+npm run client-start
