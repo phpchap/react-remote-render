@@ -13,4 +13,13 @@ project consists of two parts:
 
 usage: 
 
+- open two terminal windows: 
+
+1) ./bin/run_client
+2) ./bin/run_server 
+
+todo: 
+
+- multiple fragments on one server
+- client side running react
 
