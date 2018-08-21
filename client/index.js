@@ -10,9 +10,4 @@ app.get('*', (req, res) => {
     tailor.requestHandler(req, res)
 })
 
-app.get('/product/*', (req, res) => {
-    req.url = '/product' // always select the product.html template
-    tailor.requestHandler(req, res)
-})
-
 app.listen(8080, () => console.log('Client running tailor listening on port 8080'))

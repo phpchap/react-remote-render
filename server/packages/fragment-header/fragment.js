@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
     default:
       res.writeHead(200, {
         'Content-Type': 'text/html',
-        'Link': `<http://localhost:${fragmentPort}/public/bundle.js>; rel="fragment-script"`
+        'Link': `<http://34.245.40.163:${fragmentPort}/public/bundle.js>; rel="fragment-script"`
       })
       return res.end('')
   }

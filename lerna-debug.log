@@ -1,0 +1,196 @@
+0 silly input [ 'build' ]
+1 silly flags { _: [ 'run' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   script: 'build',
+1 silly flags   args: [] }
+2 verbose rootPath /Users/justendoherty/Documents/nodejs/remote-render
+3 info version 2.11.0
+4 silly existsSync /Users/justendoherty/Documents/nodejs/remote-render/VERSION
+5 silly initialize attempt
+6 silly initialize success
+7 silly execute attempt
+8 silly runScriptInDir build [] fragment-common
+9 silly getExecOpts { cwd: '/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-common' }
+10 silly runScriptInDir build [] fragment-header
+11 silly getExecOpts { cwd: '/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header' }
+12 error build Errored while running script in 'fragment-header'
+13 error execute callback with error
+14 error Error: Command failed: npm run build
+14 error npm WARN invalid config loglevel="notice"
+14 error
+14 error npm ERR! Darwin 16.7.0
+14 error npm ERR! argv "/Users/justendoherty/.nvm/versions/node/v6.10.3/bin/node" "/Users/justendoherty/.nvm/versions/node/v6.10.3/bin/npm" "run" "build"
+14 error npm ERR! node v6.10.3
+14 error npm ERR! npm  v3.10.10
+14 error npm ERR! code ELIFECYCLE
+14 error npm ERR! fragment-header@1.0.0 build: `webpack -p`
+14 error npm ERR! Exit status 2
+14 error npm ERR!
+14 error npm ERR! Failed at the fragment-header@1.0.0 build script 'webpack -p'.
+14 error npm ERR! Make sure you have the latest version of node.js and npm installed.
+14 error npm ERR! If you do, this is most likely a problem with the fragment-header package,
+14 error npm ERR! not with npm itself.
+14 error npm ERR! Tell the author that this fails on your system:
+14 error npm ERR!     webpack -p
+14 error npm ERR! You can get information on how to open an issue for this project with:
+14 error npm ERR!     npm bugs fragment-header
+14 error npm ERR! Or if that isn't available, you can get their info via:
+14 error npm ERR!     npm owner ls fragment-header
+14 error npm ERR! There is likely additional logging output above.
+14 error
+14 error npm ERR! Please include the following file with any support request:
+14 error npm ERR!     /Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/npm-debug.log
+14 error
+14 error > fragment-header@1.0.0 build /Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header
+14 error > webpack -p
+14 error
+14 error Hash: a60672f8a0e297511673
+14 error Version: webpack 3.12.0
+14 error Time: 7083ms
+14 error     Asset     Size  Chunks             Chunk Names
+14 error bundle.js  18.9 kB       0  [emitted]  main
+14 error    [3] ./app/index.js 427 bytes {0} [built]
+14 error    [5] ./app/Header/index.js 1.53 kB {0} [built]
+14 error    [8] ./app/Logo/index.js 410 bytes {0} [built]
+14 error    [9] ./app/Logo/styles.scss 1.16 kB {0} [built]
+14 error   [10] ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./app/Logo/styles.scss 3.75 kB {0} [built] [failed] [1 error]
+14 error   [12] ./app/NavItem/index.js 1.08 kB {0} [built]
+14 error   [14] ./app/NavItem/styles.scss 1.16 kB {0} [built]
+14 error   [15] ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./app/NavItem/styles.scss 3.75 kB {0} [built] [failed] [1 error]
+14 error   [16] ./app/Header/styles.scss 1.16 kB {0} [built]
+14 error   [17] ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./app/Header/styles.scss 3.75 kB {0} [built] [failed] [1 error]
+14 error     + 8 hidden modules
+14 error
+14 error ERROR in ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./app/Header/styles.scss
+14 error Module build failed: Error: Missing binding /Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/node-sass/vendor/darwin-x64-48/binding.node
+14 error Node Sass could not find a binding for your current environment: OS X 64-bit with Node.js 6.x
+14 error
+14 error Found bindings for the following environments:
+14 error   - OS X 64-bit with Node.js 8.x
+14 error
+14 error This usually happens because your environment has changed since running `npm install`.
+14 error Run `npm rebuild node-sass --force` to build the binding for your current environment.
+14 error     at module.exports (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/node-sass/lib/binding.js:15:13)
+14 error     at Object.<anonymous> (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/node-sass/lib/index.js:14:35)
+14 error     at Module._compile (module.js:570:32)
+14 error     at Object.Module._extensions..js (module.js:579:10)
+14 error     at Module.load (module.js:487:32)
+14 error     at tryModuleLoad (module.js:446:12)
+14 error     at Function.Module._load (module.js:438:3)
+14 error     at Module.require (module.js:497:17)
+14 error     at require (internal/module.js:20:19)
+14 error     at Object.<anonymous> (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/sass-loader/lib/loader.js:3:14)
+14 error     at Module._compile (module.js:570:32)
+14 error     at Object.Module._extensions..js (module.js:579:10)
+14 error     at Module.load (module.js:487:32)
+14 error     at tryModuleLoad (module.js:446:12)
+14 error     at Function.Module._load (module.js:438:3)
+14 error     at Module.require (module.js:497:17)
+14 error     at require (internal/module.js:20:19)
+14 error     at loadLoader (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/loadLoader.js:13:17)
+14 error     at iteratePitchingLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:169:2)
+14 error     at iteratePitchingLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:165:10)
+14 error     at /Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:173:18
+14 error     at loadLoader (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/loadLoader.js:36:3)
+14 error     at iteratePitchingLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:169:2)
+14 error     at runLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:362:2)
+14 error     at NormalModule.doBuild (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModule.js:182:3)
+14 error     at NormalModule.build (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModule.js:275:15)
+14 error     at Compilation.buildModule (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/Compilation.js:157:10)
+14 error     at factoryCallback (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/Compilation.js:348:12)
+14 error     at factory (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModuleFactory.js:243:5)
+14 error     at applyPluginsAsyncWaterfall (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModuleFactory.js:94:13)
+14 error  @ ./app/Header/styles.scss 4:14-124
+14 error  @ ./app/Header/index.js
+14 error  @ ./app/index.js
+14 error
+14 error ERROR in ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./app/Logo/styles.scss
+14 error Module build failed: Error: Missing binding /Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/node-sass/vendor/darwin-x64-48/binding.node
+14 error Node Sass could not find a binding for your current environment: OS X 64-bit with Node.js 6.x
+14 error
+14 error Found bindings for the following environments:
+14 error   - OS X 64-bit with Node.js 8.x
+14 error
+14 error This usually happens because your environment has changed since running `npm install`.
+14 error Run `npm rebuild node-sass --force` to build the binding for your current environment.
+14 error     at module.exports (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/node-sass/lib/binding.js:15:13)
+14 error     at Object.<anonymous> (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/node-sass/lib/index.js:14:35)
+14 error     at Module._compile (module.js:570:32)
+14 error     at Object.Module._extensions..js (module.js:579:10)
+14 error     at Module.load (module.js:487:32)
+14 error     at tryModuleLoad (module.js:446:12)
+14 error     at Function.Module._load (module.js:438:3)
+14 error     at Module.require (module.js:497:17)
+14 error     at require (internal/module.js:20:19)
+14 error     at Object.<anonymous> (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/sass-loader/lib/loader.js:3:14)
+14 error     at Module._compile (module.js:570:32)
+14 error     at Object.Module._extensions..js (module.js:579:10)
+14 error     at Module.load (module.js:487:32)
+14 error     at tryModuleLoad (module.js:446:12)
+14 error     at Function.Module._load (module.js:438:3)
+14 error     at Module.require (module.js:497:17)
+14 error     at require (internal/module.js:20:19)
+14 error     at loadLoader (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/loadLoader.js:13:17)
+14 error     at iteratePitchingLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:169:2)
+14 error     at iteratePitchingLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:165:10)
+14 error     at /Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:173:18
+14 error     at loadLoader (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/loadLoader.js:36:3)
+14 error     at iteratePitchingLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:169:2)
+14 error     at runLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:362:2)
+14 error     at NormalModule.doBuild (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModule.js:182:3)
+14 error     at NormalModule.build (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModule.js:275:15)
+14 error     at Compilation.buildModule (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/Compilation.js:157:10)
+14 error     at factoryCallback (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/Compilation.js:348:12)
+14 error     at factory (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModuleFactory.js:243:5)
+14 error     at applyPluginsAsyncWaterfall (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModuleFactory.js:94:13)
+14 error  @ ./app/Logo/styles.scss 4:14-124
+14 error  @ ./app/Logo/index.js
+14 error  @ ./app/Header/index.js
+14 error  @ ./app/index.js
+14 error
+14 error ERROR in ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./app/NavItem/styles.scss
+14 error Module build failed: Error: Missing binding /Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/node-sass/vendor/darwin-x64-48/binding.node
+14 error Node Sass could not find a binding for your current environment: OS X 64-bit with Node.js 6.x
+14 error
+14 error Found bindings for the following environments:
+14 error   - OS X 64-bit with Node.js 8.x
+14 error
+14 error This usually happens because your environment has changed since running `npm install`.
+14 error Run `npm rebuild node-sass --force` to build the binding for your current environment.
+14 error     at module.exports (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/node-sass/lib/binding.js:15:13)
+14 error     at Object.<anonymous> (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/node-sass/lib/index.js:14:35)
+14 error     at Module._compile (module.js:570:32)
+14 error     at Object.Module._extensions..js (module.js:579:10)
+14 error     at Module.load (module.js:487:32)
+14 error     at tryModuleLoad (module.js:446:12)
+14 error     at Function.Module._load (module.js:438:3)
+14 error     at Module.require (module.js:497:17)
+14 error     at require (internal/module.js:20:19)
+14 error     at Object.<anonymous> (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/sass-loader/lib/loader.js:3:14)
+14 error     at Module._compile (module.js:570:32)
+14 error     at Object.Module._extensions..js (module.js:579:10)
+14 error     at Module.load (module.js:487:32)
+14 error     at tryModuleLoad (module.js:446:12)
+14 error     at Function.Module._load (module.js:438:3)
+14 error     at Module.require (module.js:497:17)
+14 error     at require (internal/module.js:20:19)
+14 error     at loadLoader (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/loadLoader.js:13:17)
+14 error     at iteratePitchingLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:169:2)
+14 error     at iteratePitchingLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:165:10)
+14 error     at /Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:173:18
+14 error     at loadLoader (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/loadLoader.js:36:3)
+14 error     at iteratePitchingLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:169:2)
+14 error     at runLoaders (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/loader-runner/lib/LoaderRunner.js:362:2)
+14 error     at NormalModule.doBuild (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModule.js:182:3)
+14 error     at NormalModule.build (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModule.js:275:15)
+14 error     at Compilation.buildModule (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/Compilation.js:157:10)
+14 error     at factoryCallback (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/Compilation.js:348:12)
+14 error     at factory (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModuleFactory.js:243:5)
+14 error     at applyPluginsAsyncWaterfall (/Users/justendoherty/Documents/nodejs/remote-render/server/packages/fragment-header/node_modules/webpack/lib/NormalModuleFactory.js:94:13)
+14 error  @ ./app/NavItem/styles.scss 4:14-124
+14 error  @ ./app/NavItem/index.js
+14 error  @ ./app/Header/index.js
+14 error  @ ./app/index.js
+14 error
+14 error     at Promise.all.then.arr (/Users/justendoherty/Documents/nodejs/remote-render/node_modules/execa/index.js:236:11)
