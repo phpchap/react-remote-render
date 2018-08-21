@@ -1,3 +1,5 @@
 /node_modules
 server/packages/fragment-common/node_modules
 server/packages/fragment-header/node_modules
+lerna-debug.log
+*npm-debug.log
